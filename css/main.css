@@ -13,25 +13,61 @@ html {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  height: 100vh;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
 }
 
-.container {
-  background-color: #333;
-  color: white;
-  margin: 20px;
-  padding: 10px;
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+.burger-btn:hover .burger-btn__bars::after,
+.burger-btn:hover .burger-btn__bars::before {
+  width: 100%;
+}
+
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  content: "";
+  background-color: #fff;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.burger-btn__bars {
+  width: 100%;
+}
+
+.burger-btn__bars::after {
+  top: 13px;
+  width: 60%;
+}
+
+.burger-btn__bars::before {
+  top: 27px;
+  width: 30%;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 /*# sourceMappingURL=main.css.map */
