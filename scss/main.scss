@@ -16,12 +16,11 @@ html {
 }
 
 body {
-    // font-family: 'Dancing Script', cursive;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
 }
 
-//nav
+// nav
 .burger-btn {
     position: fixed;
     top: 20px;
@@ -39,6 +38,7 @@ body {
     }
 
     &:hover {
+
         .burger-btn__bars::after,
         .burger-btn__bars::before {
             width: 100%;
@@ -48,7 +48,7 @@ body {
     &__box {
         position: relative;
         width: 40px;
-        height: 40px;
+        height: 30px;
     }
 
     &__bars,
@@ -69,6 +69,88 @@ body {
             top: 27px;
             width: 30%;
             transition-delay: .1s;
+        }
+    }
+}
+
+// header
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 75vh;
+    text-align: center;
+    color: $pure-white;
+    @include heroImages("../img/palm-g45472cab7_640.jpg");
+    background-attachment: scroll;
+
+    &__heading {
+        font-family: "Dancing Script", cursive;
+        font-size: 4.8rem;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+    }
+
+    &__btn {
+        margin-top: 2em;
+        padding: 0.8em 1.6em;
+        font-size: 1.4rem;
+        background-color: $pure-white;
+        border: none;
+        border-radius: 8px;
+        color: $dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &::before {
+            background-color: $light-white;
+        }
+    }
+}
+
+//======
+// media
+//======
+
+@media(min-width:768px) {
+    .white-block {
+        height: 50px;
+        width: 45%;
+    }
+
+    .header {
+        &__heading {
+            font-size: 6.6rem;
+        }
+
+        &__text {
+            font-size: 2.2rem;
+        }
+
+        &__btn {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .burger-btn {
+        top: 50px;
+        right: 50px;
+    }
+
+    .header {
+        background-image: $blue-gradient, url("../img/palm-g9b4c75793_1920.jpg");
+
+        &__heading {
+            font-size: 10rem;
         }
     }
 }
