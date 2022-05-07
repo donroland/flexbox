@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tropical Paradise</title>
-    <!-- style css-->
-    <link rel="stylesheet" href="./css/main.css">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/49ccc4f114.js" crossorigin="anonymous"></script>
@@ -17,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;700&display=swap"
         rel="stylesheet">
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- style css-->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -99,66 +103,168 @@
                     <div class="islands__card" onclick="void(0)">
                         <div class="islands__card-img islands__card-img--first">
                             <h3 class="islands__card-img-title">Wyspa Tiki Taki</h3>
-                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right">Więcej informacji</i>
+                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right"></i>Więcej informacji
                             </p>
                         </div>
                         <div class="islands__card-info">
                             <h3 class="islands__card-info-title">Wyspa Tiki Taki</h3>
-                            <ul class="islands_card-info-list">
+                            <ul class="islands__card-info-list">
                                 <li class="islands__card-info-list-item">Piękna okolica</li>
                                 <li class="islands__card-info-list-item">Ciepła woda</li>
                                 <li class="islands__card-info-list-item">Czyste plaże</li>
                                 <li class="islands__card-info-list-item">Ekskluzywny bar</li>
                                 <li class="islands__card-info-list-item">Wysokie palmy</li>
                             </ul>
-                            <button class="islands_card-info-btn btn-special-animation">Klik</button>
+                            <button class="islands__card-info-btn btn-special-animation">Klik</button>
                         </div>
                     </div>
 
                     <div class="islands__card" onclick="void(0)">
                         <div class="islands__card-img islands__card-img--second">
                             <h3 class="islands__card-img-title">Wyspa Kasztanków</h3>
-                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right">Więcej informacji</i>
+                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right"></i>Więcej informacji
                             </p>
                         </div>
                         <div class="islands__card-info">
                             <h3 class="islands__card-info-title">Wyspa Kasztanków</h3>
-                            <ul class="islands_card-info-list">
+                            <ul class="islands__card-info-list">
                                 <li class="islands__card-info-list-item">Piękna okolica</li>
                                 <li class="islands__card-info-list-item">Ciepła woda</li>
                                 <li class="islands__card-info-list-item">Czyste plaże</li>
                                 <li class="islands__card-info-list-item">Ekskluzywny bar</li>
                                 <li class="islands__card-info-list-item">Wysokie palmy</li>
                             </ul>
-                            <button class="islands_card-info-btn btn-special-animation">Klik</button>
+                            <button class="islands__card-info-btn btn-special-animation">Klik</button>
                         </div>
                     </div>
 
                     <div class="islands__card" onclick="void(0)">
                         <div class="islands__card-img islands__card-img--third">
                             <h3 class="islands__card-img-title">Wyspa Malagi</h3>
-                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right">Więcej informacji</i>
+                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right"></i>Więcej informacji
                             </p>
                         </div>
                         <div class="islands__card-info">
                             <h3 class="islands__card-info-title">Wyspa Malagi</h3>
-                            <ul class="islands_card-info-list">
+                            <ul class="islands__card-info-list">
                                 <li class="islands__card-info-list-item">Piękna okolica</li>
                                 <li class="islands__card-info-list-item">Ciepła woda</li>
                                 <li class="islands__card-info-list-item">Czyste plaże</li>
                                 <li class="islands__card-info-list-item">Ekskluzywny bar</li>
                                 <li class="islands__card-info-list-item">Wysokie palmy</li>
                             </ul>
-                            <button class="islands_card-info-btn btn-special-animation">Klik</button>
+                            <button class="islands__card-info-btn btn-special-animation">Klik</button>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
+        <section class="offers section-padding section" id="offers">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+
+            <h2 class="section-heading">Oferty</h2>
+            <div class="wrapper">
+                <div class="offers_box">
+                    <div class="offers__option">
+                        <img src="./img/bubbles-g6f3c793dd_640.jpg" alt="Impreza z dziećmi nad wodą"
+                            class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Wyjazd z dziećmi</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid nemo neque dignissimos labore autem ex consectetur sunt veritatis, quasi est
+                                eveniet enim dicta odit itaque!</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Nobis, aut.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/sea-g0c600e772_640.jpg" alt="Impreza z dziećmi nad wodą"
+                            class="offers__option-img offers__option-img--right">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Wyjazd z kumplami</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid nemo neque dignissimos labore autem ex consectetur sunt veritatis, quasi est
+                                eveniet enim dicta odit itaque!</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Nobis, aut.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/beach-g1f00f1b50_640.jpg" alt="Impreza z dziećmi nad wodą"
+                            class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">Wyjazd z dziećmi</h3>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid nemo neque dignissimos labore autem ex consectetur sunt veritatis, quasi est
+                                eveniet enim dicta odit itaque!</p>
+                            <p class="offers__option-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Nobis, aut.</p>
+                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="img/attractive-g1e80a6318_640.jpg" alt="M. Dolce">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Dolore et nam corrupti maiores soluta omnis esse explicabo dolorum recusandae
+                                reiciendis. Id minima ratione facere soluta?</p>
+                            <strong>M. Dolce</strong>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="img/woman-g8f472cfdb_640.jpg" alt="K. Witt">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Dolore et nam corrupti maiores soluta omnis esse explicabo dolorum recusandae
+                                reiciendis. Id minima ratione facere soluta?</p>
+                            <strong>K. Witt</strong>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="img/happy-g2a657d0fd_640.jpg" alt="B. Adams">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Dolore et nam corrupti maiores soluta omnis esse explicabo dolorum recusandae
+                                reiciendis. Id minima ratione facere soluta?</p>
+                            <strong>B. Adams</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/slick.js"></script>
 
     <script src="./js/main.js"></script>
 </body>
